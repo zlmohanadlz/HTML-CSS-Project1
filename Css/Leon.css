@@ -48,13 +48,10 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: "Work Sans", sans-serif;
 }
 /* End global Values */
-
-
 
 .container {
     margin: auto;
@@ -106,7 +103,7 @@ body {
     position: relative;
 }
 
-.header .links:hover ul {
+.header .links.open ul {
     display: block;
 }
 
@@ -135,7 +132,7 @@ body {
 .header .links .icon span:nth-child(2) {
     height: 3px;
     width: 60%;
-    transition: .3s;
+    transition: 0.3s;
 }
 .header .links .icon span:last-child {
     height: 3px;
@@ -155,14 +152,13 @@ body {
     z-index: 1;
 }
 
-
 .header .links ul::before {
     content: "";
     position: absolute;
     border-width: 10px;
     border-style: solid;
     border-color: transparent transparent #f6f6f6 transparent;
-    right: 5px; 
+    right: 5px;
     /* border width 20px and links are 30 : 5 + 10px =15 half of links so it's in the middle of the links */
     top: -20px;
 }
@@ -172,7 +168,7 @@ body {
     padding: 15px;
     text-decoration: none;
     color: #333;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .header .links a:hover {
@@ -219,7 +215,7 @@ body {
 /* End Landing Section */
 /* Start Features  */
 .features {
-    padding: var(--section-padding) ;
+    padding: var(--section-padding);
     background-color: var(--section-background);
 }
 
@@ -248,9 +244,9 @@ body {
     font-size: 17px;
 }
 /* End Features */
-/* Start Services */         
+/* Start Services */
 .services {
-    padding: var(--section-padding) ;
+    padding: var(--section-padding);
 }
 
 .services .services-content {
@@ -362,8 +358,8 @@ body {
 
 @media (max-width: 991px) {
     .about-content {
-            flex-direction: column;
-            text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
     .about-content .image::after,
     .about-content .image::before {
@@ -373,7 +369,6 @@ body {
         margin: 0 auto 60px;
     }
 }
-
 
 .about-content .image {
     position: relative;
@@ -394,7 +389,6 @@ body {
     top: -40px;
     left: -20px;
     z-index: -1;
-
 }
 
 .about-content .image::after {
@@ -413,14 +407,12 @@ body {
     flex-basis: calc(100% - 500px);
     /* flex: 1;
     padding-left: 200px; */
-
 }
 
 .about-content .text p:first-of-type {
     font-weight: bold;
     line-height: 2;
     margin-bottom: 50px;
-
 }
 
 .about-content .text hr {
@@ -473,7 +465,6 @@ body {
     margin-left: 10px;
     color: var(--secondary-color);
 }
-
 
 /* End Contact */
 
