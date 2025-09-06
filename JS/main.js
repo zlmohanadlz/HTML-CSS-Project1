@@ -2,7 +2,8 @@
 
 let nav = document.querySelector(".links");
 
-nav.addEventListener("click", function () {
+nav.addEventListener("click", function (e) {
+    e.stopPropagation();
     this.classList.toggle("open");
 });
 
@@ -11,3 +12,7 @@ document.onkeyup = function (e) {
         nav.classList.remove("open");
     }
 };
+
+document.addEventListener("click", () => {
+    nav.classList.remove("open");
+});
